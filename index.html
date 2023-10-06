@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahammed Zulaikh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41075abdaa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!--ajax script-->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span class="name-tag"><span class="w3">W3</span>Webs</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+          <div class="header-text">
+                <p>Web development service</p>
+                <h1>Hi, I'm <span >Ahmed</span><br>Front end developer</h1>
+          </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" >
+                    <img src="images/webp/me-min.webp" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle" >About Me</h1>
+                    <p >"I am a passionate and self-driven individual with an insatiable appetite for learning and growth.
+                        I believe that curiosity is the key to unlocking endless possibilities, and I've embraced this philosophy
+                        on my journey of self-improvement. With a strong commitment to continuous learning, I've taken the
+                        initiative to explore diverse fields and acquire a wide range of skills, including web development,
+                        design, and more. My enthusiasm for acquiring knowledge is matched only by my dedication to applying
+                        it in practical ways. I am actively seeking opportunities where I can contribute my skills
+                        learn from experienced professionals, and collaborate on exciting projects. I thrive on challenges,
+                        and I'm eager to make a meaningful impact in any endeavor I undertake. Let's connect and explore
+                        the endless horizons of learning and innovation together!"
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML,CSS,JavaScript</span><br>Ability to develop professional and appealing websites using various website tools</li>
+                                <li><span>C,Java,Python</span><br>Basic knowledgein various coding languages.</li>
+                                <li><span>Design and analysis</span><br>Good understanding capability in product designs and development.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>Assistant Executive</span><br>Walkroo internation pvt ltd - 2022</li>
+                                <li><span>Intern</span><br>Brototype - 2023(current)</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High school</span><br>MCF Publich school</li>
+                                <li><span>Higher-sec</span><br>KHMHSS Valakkulam</li>
+                                <li><span>B.Tech</span><br>Govt. Engineering College- Calicut</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container" >
+            <h1 class="subtitle" >My Services</h1>
+            <div class="services-list" >
+                <div >
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design </h2>
+                    <p>
+                        "As a front-end developer, I craft engaging and responsive websites that captivate
+                         your audience. Let's transform your vision into a visually stunning online experience."
+                         </p>
+                   
+                </div>
+                <div >
+                    <i class="fa-solid fa-cube"></i>
+                    <h2>Graphic Gesigning</h2>
+                    <p>"I am a skilled graphic designer specializing in web design, and I bring a unique blend of creativity
+                         and technical proficiency to the digital realm. With a deep understanding of design principles and
+                          a keen eye for aesthetics, I have the ability to transform abstract ideas into stunning visual elements
+                           that resonate with users.</p>
+                        
+                </div >
+                <div >
+                    <i class="fa-brands fa-discord"></i>
+                    <h2>Discord Manager </h2>
+                    <p>"My Discord management service optimizes and maintains online communities for
+                        engagement and positivity. I handle channel setup, moderation, and community growth,
+                        ensuring a welcoming and interactive space for your members to connect."</p>
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfoli-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/webp/main-qimg-bff406f71d10dd583c8dc4d9273a9d7f-pjlq.webp" alt="">
+                    <div class="layout">
+                        <h3>Cloned Websites</h3>
+                        <p>Few professional cloned websites</p>                      
+                    </div>
+                </div>               
+                <div class="work">
+                    <img src="images/webp/spacex.webp" alt="">
+                    <div class="layout">
+                        <h3>SpaceX clone</h3>
+                        <p>Created a static clone of spacex website.</p>
+                        <a class="github-icon" href="https://ahmed3691.github.io/SpaceX/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/webp/lambo.webp" alt="">
+                    <div class="layout">
+                        <h3>Lamborgini home page</h3>
+                        <p>Created a static clone of Lamborgini website.</p>
+                        <a class="github-icon" href="https://ahmed3691.github.io/lamborgini/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- Blog  -->
+    <div id="blog">
+        <div class="container">
+            <div class="blog-head" >BLOG</div>
+            <div class="content">
+                <span><a href=" https://instagram.com/ahmed_bin_azeez?igshid=YTQwZjQ0NmI0OA==" target="_blank">
+                        <img class="dog" src="images/webp/FB_IMG_1589448665337.webp"  >
+                    </a></span>
+                <div class="blog-details" >"Welcome to my captivating world of photography, where each click of the 
+                    shutter brings moments to life and transforms ordinary scenes into extraordinary stories. 
+                    In this visual diary, I invite you to join me on a journey through the lens, where I capture 
+                    the beauty, emotions, and hidden details that often go unnoticed in our bustling world. <br>
+                    My blog is not just a gallery of images; it's a window into the heart and soul of photography.
+                    Here, I share the stories behind the photographs, the techniques that breathe life into each 
+                    frame, and the adventures that lead me to these unforgettable moments. From stunning landscapes
+                    that take your breath away to intimate portraits that reveal the essence of humanity, 
+                    my passion for photography knows no bounds. </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:ahmedgeck@gmail.com">ahmedgeck@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i>9605633278</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/ahmed_bin_azeez?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ahmed.zulaikh.7?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ahammed-zulaikh-730549217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/ZulaikhAhmed?t=X1i-dZ3BIU4E1_2wHYVHzw&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1EeXsMDbD10izK3ZoCVmqzTlotUOs07lP/view?usp=sharing" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-rigth">
+                    <form id="submit-form"  action="https://script.google.com/macros/s/AKfycbzG24TrF4DDhFps1N-IqYQ6C5c6zdEwOdH_SDswgh5dUBc64izF80PYUfKUqrg5ogOQOw/exec">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; W3Webs.  </p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links ")
+        var tabcontents= document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVnhvunGOlrtdcuerfaEQvDW2ic-4kjcfq7jSaEk5nsatJaqgo90vFCgpSYDDpOXDE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzG24TrF4DDhFps1N-IqYQ6C5c6zdEwOdH_SDswgh5dUBc64izF80PYUfKUqrg5ogOQOw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
